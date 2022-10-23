@@ -1,0 +1,84 @@
+/*
+ *so here is the css file
+ * */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Poppins;
+  background-image: linear-gradient(#f8c0bf, #93bbc9);
+}
+h1{
+  font-size: 2.9em;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: bold;
+}
+h2{
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Poppins;
+}
+p{
+  font-size:0.85em;
+  text-align: center;
+  font-family: Poppins;
+  
+}
+button{
+  width:5rem;
+  height:5rem;
+  border-radius:2.5rem;
+  font-size:1.5rem;
+}
+h6{
+margin:2rem;
+font-style: italic;
+}
+#counter {
+  font-size: 6rem;
+  padding:0px;
+  margin:2rem;
+  font-family: poppins;
+}
+#button__wrapper {
+  display: flex;
+  gap: 3rem;
+  margin-bottom:3rem;
+
+  & > * {
+    border: none;
+   /* box-shadow: 0px 0px 10px var(--clr-gray200);*/
+    font-weight: bold;
+    font-size: 2rem;
+    color: inherit;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+
+    &:hover {
+      background-color: var(#efefef);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
