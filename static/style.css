@@ -1,0 +1,105 @@
+/*
+ *so here is the css file
+ * */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Poppins;
+  background-size: 200% 200%;
+  background-image: linear-gradient(-45deg, #d13cee 0%,#f8c0bf 25%, #52bfde 51%,#59f8c1 100%);
+          animation: AnimateBG 9s ease-out infinite;
+  animation-iteration-count:infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 51%;
+  }
+  51% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+h1{
+  font-size: 2.9em;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: bold;
+}
+h2{
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Poppins;
+}
+p{
+  font-size:0.85em;
+  text-align: center;
+  font-family: Poppins;
+  
+}
+button{
+  width:5rem;
+  height:5rem;
+  border-radius:2.5rem;
+  font-size:1.5rem;
+}
+h6{
+margin:2rem;
+font-style: italic;
+}
+#counter {
+  font-size: 6rem;
+  padding:0px;
+  margin:2rem;
+  font-family: poppins;
+}
+#button__wrapper {
+  display: flex;
+  gap: 3rem;
+  margin-bottom:3rem;
+
+  & > * {
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: inherit;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+
+    &:hover {
+      background-color: var(#b7d6df);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.positive{
+  color: blue;
+}
+
+.negative{
+  color: red;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
