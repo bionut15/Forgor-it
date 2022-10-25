@@ -1,4 +1,8 @@
 //Here is the java script file
+function sleep(ms)
+{
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 console.log("script loaded");
 
@@ -24,7 +28,6 @@ function increment()
   {
     if (this.readyState == 4 && this.status == 200)
     {
-      updateCounter();
     }
   }
   xhttp.open('GET', "increment", true);
@@ -38,7 +41,6 @@ function decrement()
   {
     if (this.readyState == 4 && this.status == 200)
     {
-      updateCounter();
     }
   }
   xhttp.open('GET', "decrement", true);
@@ -56,4 +58,10 @@ function counterStyle() {
   }
 }
 
-
+async function liveUpdate(){
+  while(true){
+    updateCounter();
+    console.log("tick");
+    await sleep(1000);
+  }
+}

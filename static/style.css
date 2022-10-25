@@ -60,7 +60,7 @@ font-style: italic;
 }
 #button__wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom:3rem;
 
   & > * {
@@ -85,7 +85,7 @@ font-style: italic;
 }
 
 .positive{
-  color: blue;
+  color: green;
 }
 
 .negative{
