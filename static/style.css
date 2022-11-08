@@ -44,9 +44,11 @@ p{
 }
 button{
   width:5rem;
+  font-family: Poppins-bold;
   height:5rem;
   border-radius:2.5rem;
-  font-size:1.5rem;
+  font-size:3.5rem;
+  font-weigth: bold;
 }
 h6{
 margin:2rem;
@@ -57,6 +59,7 @@ font-style: italic;
   padding:0px;
   margin:2rem;
   font-family: poppins;
+  backdrop-filter: blur(70%);
 }
 #button__wrapper {
   display: flex;
@@ -66,7 +69,7 @@ font-style: italic;
   & > * {
     border: none;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 5rem;
     color: inherit;
     height: 4rem;
     width: 4rem;
