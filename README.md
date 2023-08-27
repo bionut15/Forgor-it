@@ -3,4 +3,4 @@ This is a website made for counting when someone lost something, best for being 
 
 Here is the [website](http://bionut15.pythonanywhere.com/)
 
-![image](https://user-images.githubusercontent.com/61597084/200674099-dce2aa38-7fde-407d-a984-2fd04175f01a.png)
+![Peek 2023-08-27 10-55](https://github.com/bionut15/Forgor-it/assets/61597084/7bddfac8-426e-4734-b92e-d7d20e57fcbf)
